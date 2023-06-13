@@ -22,7 +22,7 @@ app.use(express.json());
 
 // Definir as rotas
 app.use('/api/users', userRoutes);
-//app.use('/api/products', productRoutes);
+
 
 // Iniciar o servidor
 app.listen(PORT, () => {
