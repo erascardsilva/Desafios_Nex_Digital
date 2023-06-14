@@ -1,23 +1,48 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Navmenu from './parts/Navmenu';
+import SignupForm from './parts/ SignupForm';
+import LoginUser from './parts/LoginUser';
+import CadastreUser from './parts/CadastreUse';
+
 
 function App() {
+  const [activeContent, setActiveContent] = useState('signup');
+  const handleContentChange = (content) => {
+    setActiveContent(content);
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="nex-grid">
+        <div id="item-0">
+          
+          <Navmenu />
+        </div>
+        <div id="item-1">
+        {activeContent === 'signup' && (
+            <div>
+              <h2>Cadastro de Usuário</h2>
+              <SignupForm />
+            </div>
+          )}
+
+          {activeContent === 'LoginUser' && (
+            <div>
+              
+              <LoginUser />
+            </div>
+          )}
+
+          {activeContent === 'CadastreUser' && (
+            <div>
+              
+              <CadastreUser />
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
