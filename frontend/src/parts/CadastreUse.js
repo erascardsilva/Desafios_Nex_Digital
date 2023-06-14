@@ -15,7 +15,7 @@ const CadastreUser = () => {
     setSubmitting(true);
 
     axios
-      .post('http://localhost:3000/signup', { name, email, password })
+      .post('http://localhost:8000/signup', { name, email, password })
       .then((response) => {
         setSubmitting(false);
         setSubmitted(true);

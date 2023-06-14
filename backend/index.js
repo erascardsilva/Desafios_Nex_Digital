@@ -1,11 +1,8 @@
 const express = require('express');
 const app = express();
 const sequelize = require('./data/database.js');
-const PORT = process.env.PORT || 3000;
-
-// Importar as rotas
+const PORT = process.env.PORT || 8000;
 const userRoutes = require('./routes/usersRoutes.js');
-//const productRoutes = require('./routes/productRoutes');
 
 // Testar conexão com o banco de dados
 sequelize
@@ -22,7 +19,6 @@ app.use(express.json());
 
 // Definir as rotas
 app.use('/api/users', userRoutes);
-
 
 // Iniciar o servidor
 app.listen(PORT, () => {
