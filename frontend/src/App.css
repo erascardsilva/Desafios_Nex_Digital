@@ -14,11 +14,11 @@
 }
 
 #item-1 {
-  background-color: #f6faff;
+  background-color: #faf6ff;
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: center;
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 nav {
@@ -204,7 +204,7 @@ ul {
   height: auto;
   text-align: center;
   margin:auto;
-  box-shadow: 0px 0px 8px rgba(56, 56, 56, 0.1);
+  box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.1);
 
 }
 
