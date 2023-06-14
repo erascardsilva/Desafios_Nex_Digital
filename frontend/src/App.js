@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Navmenu from './parts/Navmenu';
-import SignupForm from './parts/ SignupForm';
+import HomeStart from './parts/HomeStart';
 import LoginUser from './parts/LoginUser';
 import CadastreUser from './parts/CadastreUse';
 
@@ -23,8 +23,7 @@ function App() {
         <div id="item-1">
         {activeContent === 'signup' && (
             <div>
-              <h2>Cadastro de Usuário</h2>
-              <SignupForm />
+              <HomeStart />
             </div>
           )}
 
