@@ -1,47 +1,28 @@
-import React, { useState } from 'react';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navmenu from './parts/Navmenu';
 import HomeStart from './parts/HomeStart';
 import LoginUser from './parts/LoginUser';
-import CadastreUser from './parts/CadastreUse';
-
+import CadastUser from './parts/CadastreUse';
+import './App.css';
 
 function App() {
-  const [activeContent, setActiveContent] = useState('signup');
-  const handleContentChange = (content) => {
-    setActiveContent(content);
-  };
-
-
   return (
     <div className="App">
+      <Router>
       <div className="nex-grid">
         <div id="item-0">
-          
           <Navmenu />
         </div>
-        <div id="item-1">
-        {activeContent === 'signup' && (
-            <div>
-              <HomeStart />
-            </div>
-          )}
-
-          {activeContent === 'LoginUser' && (
-            <div>
-              
-              <LoginUser />
-            </div>
-          )}
-
-          {activeContent === 'CadastreUser' && (
-            <div>
-              
-              <CadastreUser />
-            </div>
-          )}
+          <div id="item-1">
+            <Routes>
+              <Route path="/" element={<HomeStart />} />
+              <Route path="/login" element={<LoginUser />} />
+              <Route path="/cadastro" element={<CadastUser />} />
+            </Routes>
+          </div>
         </div>
-      </div>
+      </Router>
     </div>
   );
 }

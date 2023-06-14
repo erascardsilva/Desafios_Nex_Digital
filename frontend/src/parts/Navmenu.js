@@ -1,21 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import nexLogo from '../image/nexLogo.png';
 
 function Navmenu() {
-    return (
-        <div>
-           <img src= {nexLogo} alt="Logo da NEX DIGITAL" />
-            <nav>
+  return (
+    <div>
+      <img src={nexLogo} alt="Logo da NEX DIGITAL" />
+      <nav>
+        <ul className="menu">
+        <li className="item button secondary">
+            <Link to="/" title="Inicio">
+              <i className="icon icon-lock-1"></i> Home
+            </Link>
+          </li>
 
-                <ul class="menu">
-                       
-                    <li class="item button"><a href="#" title="Entrar"><i class="icon icon-plug"></i> Efetuar Login </a></li>
-                    <li class="item button secondary"><a href="#" title="Cadastro"><i class="icon icon-lock-1"></i> Cadastrar</a></li>
-                    <li class="toggle"><span class="bars"></span></li>
-                 </ul>
-            </nav >
-        </div >
-);
-};
+          <li className="item button">
+            <Link to="/login" title="Entrar">
+              <i className="icon icon-plug"></i> Efetuar Login
+            </Link>
+          </li>
+          <li className="item button secondary">
+            <Link to="/cadastro" title="Cadastro">
+              <i className="icon icon-lock-1"></i> Cadastrar
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+}
 
 export default Navmenu;

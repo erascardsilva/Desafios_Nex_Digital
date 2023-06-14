@@ -2,7 +2,6 @@ import { useState } from "react";
 import fullImage from '../image/full.png';
 import nexLogo from '../image/nexLogo.png';
 
-
 function HomeStart() {
     return (
         <div>
