@@ -1,0 +1,22 @@
+# Dependências instaladas pelo gerenciador de pacotes (por exemplo, npm ou yarn)
+/node_modules
+
+# Arquivos gerados durante a execução do aplicativo
+/dist
+/build
+
+.env
+*.log
+.tmp
+*.js.map
+*.tsbuildinfo
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
