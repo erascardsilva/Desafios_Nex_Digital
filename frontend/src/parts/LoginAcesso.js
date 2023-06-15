@@ -1,6 +1,6 @@
 import { useState } from "react";
 import fullImage from '../image/full.png';
-import nexLogo from '../image/nexLogo.png';
+import nexLogo from '../image/loginok.jpg';
 
 function LoginAcesso() {
     return (
@@ -13,13 +13,13 @@ function LoginAcesso() {
                     <div className="img-perfil">
                         <img src={nexLogo} title="Nex Digital" alt="perfil" />
                     </div>
-                    <div className="titulo">Acesso  </div>
+                    <div className="titulo">Acesso Garantido  </div>
                     <figcaption className="descricao">
                         <p>
-                            <b>App Node Nex Digital</b><br />
-                            Backend (Node.js & Express & sequelize)<br />
-                            Frontend (React) <br />
-                            Banco de dados - PostgreSQL
+                            <b>Login Garantido</b><br />
+                            Aplicativo Finalizado<br />
+                            Espero ter resolvido as questoes <br />
+                            Obrigado
                         </p>
                     </figcaption>
                     
