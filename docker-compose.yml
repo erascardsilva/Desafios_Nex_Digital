@@ -1,0 +1,41 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backendApi
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 9000:9000
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=nexdb
+      - DB_USER=erasmo
+      - DB_PASSWORD=3727
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./banco_de_dados/nexdb.sql:/docker-entrypoint-initdb.d/nexdb.sql
+
+ 
