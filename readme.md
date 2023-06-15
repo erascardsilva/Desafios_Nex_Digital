@@ -16,10 +16,10 @@ Objetivo :
 Desenvolver uma aplicação que consiste em: um banco de dados (PostgreSQL), uma API (Node.js + Sequelize.js) e o Front-end (React.js).
 Na aplicação, um usuário deverá se cadastrar utilizando nome, e-mail e senha e se autenticar na aplicação utilizando JWT. Já na home, o backend deve retornar para o usuário uma lista de produtos que apenas um usuário autenticado pode acessar.
 <hr>
-<img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/7b3a39a2-76b2-4f88-9bdf-86d5bfe7cfa5">
+<img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/1d759056-1d22-4e15-b57f-e804481e8edd">
 <hr>
-<img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/fb10590f-c464-4af4-9fca-c11165851f83">
+<img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/607c20ad-b290-492c-94fb-7420f6cd600c">
 <hr>
-<img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/434da066-4388-439f-963e-ebec58e33b9e">
+<img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/99e4ee76-f3dd-4858-9f43-d947afed5c3d">
 <hr>
-<img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/5f0fb49c-9b6a-47bc-9467-4418906ed175">
+<img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/f9e6534c-a22e-48c1-b4cb-8d3a688fb601">
