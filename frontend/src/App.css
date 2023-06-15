@@ -1,7 +1,7 @@
 .nex-grid {
   display: grid;
-  grid-template-rows: 20%;
-  grid-template-columns: 80% ;
+  grid-template-rows: 25%;
+  grid-template-columns: 75% ;
   gap: 0px;
   height: 100vh;
 }
@@ -14,11 +14,11 @@
 }
 
 #item-1 {
-  background-color: #faf6ff;
+  background-color: #f6f6f6;
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: center;
-  margin-top: 4%;
+  margin-top: 2%;
 }
 
 nav {
@@ -65,7 +65,7 @@ ul {
 }
 
 .button.secondary {
-  border-bottom: 1px #007cff solid;
+  border-bottom: 1px hsl(211, 100%, 50%) solid;
 }
 
 /* Mobile menu */

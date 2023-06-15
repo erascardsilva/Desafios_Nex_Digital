@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './FormC.css'; 
+import './FormC.css';
 
 const CadastreUser = () => {
   const [name, setName] = useState('');
@@ -10,24 +10,28 @@ const CadastreUser = () => {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
 
-    axios
-      .post('http://localhost:8000/api/users/signup', { name, email, password })
-      .then((response) => {
-        setSubmitting(false);
-        setSubmitted(true);
-        setName('');
-        setEmail('');
-        setPassword('');
-        setError(null);
-      })
-      .catch((error) => {
-        setSubmitting(false);
-        setError('Ocorreu um erro ao enviar o formulário. Tente novamente.');
+    try {
+      const response = await axios.post('http://localhost:9000/nexApi', {
+        name,
+        email,
+        password
       });
+      setSubmitting(false);
+      setSubmitted(true);
+      setName('');
+      setEmail('');
+      setPassword('');
+      setError(null);
+      console.log('Usuário criado com sucesso:', response.data);
+    } catch (error) {
+      setSubmitting(false);
+      setError('Ocorreu um erro ao enviar o formulário. Tente novamente.');
+      console.error('Erro ao criar usuário:', error);
+    }
   };
 
   return (

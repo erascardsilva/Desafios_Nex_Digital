@@ -5,7 +5,7 @@ import nexLogo from '../image/nexLogo.png';
 function Navmenu() {
   return (
     <div>
-      <img src={nexLogo} alt="Logo da NEX DIGITAL" style={{ width: '220px', height: 'auto' }}/>
+      <img src={nexLogo} alt="Logo da NEX DIGITAL" style={{ width: '190px', height: 'auto' }}/>
       <nav>
         <ul className="menu">
         <li className="item button secondary">

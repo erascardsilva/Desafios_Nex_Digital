@@ -4,6 +4,7 @@ import Navmenu from './parts/Navmenu';
 import HomeStart from './parts/HomeStart';
 import LoginUser from './parts/LoginUser';
 import CadastUser from './parts/CadastreUse';
+import LoginAcesso from './parts/LoginAcesso';
 import './App.css';
 
 class App extends Component {
@@ -30,7 +31,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      
         <Router>
           <div className="nex-grid">
             <div id="item-0">
@@ -41,12 +42,13 @@ class App extends Component {
                 <Route path="/" element={<HomeStart />} />
                 <Route path="/login" element={<LoginUser />} />
                 <Route path="/cadastro" element={<CadastUser />} />
+                <Route path="/acessologin" element={<LoginAcesso />} />
               </Routes>
               <p className="App-intro">{this.state.apiResponse}</p>
             </div>
           </div>
         </Router>
-      </div>
+     
     );
   }
 }
