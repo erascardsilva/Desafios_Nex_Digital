@@ -18,5 +18,6 @@ Na aplicação, um usuário deverá se cadastrar utilizando nome, e-mail e senha
 
 <img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/7b3a39a2-76b2-4f88-9bdf-86d5bfe7cfa5">
 <img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/fb10590f-c464-4af4-9fca-c11165851f83">
+<br>
 <img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/434da066-4388-439f-963e-ebec58e33b9e">
 <img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/5f0fb49c-9b6a-47bc-9467-4418906ed175">
