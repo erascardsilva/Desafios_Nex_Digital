@@ -1,10 +1,10 @@
 <h1>Desafio Nex Digital</h1>
 <br>
-Backend - API  : Node.js v20.3.0 | Express | Sequelize | 
+Backend - API  : Node.js v20.3.0 | Express | Sequelize | ports: 9000
 <br>
-frontend : React.js
+frontend : React.js  | ports: 3000
 <br>
-banco de Dados : PostgreSQL
+banco de Dados : PostgreSQL  | ports: 5433:5432
 <br> 
 <hr>
 Docker e Docker-compose
