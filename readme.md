@@ -14,7 +14,7 @@ portas localhost:3000
 <br>
 Objetivo : 
 Desenvolver uma aplicação que consiste em: um banco de dados (PostgreSQL), uma API (Node.js + Sequelize.js) e o Front-end (React.js).
-Na aplicação, um usuário deverá se cadastrar utilizando nome, e-mail e senha e se autenticar na aplicação utilizando JWT. Já na home, o backend deve retornar para o usuário uma lista de produtos que apenas um usuário autenticado pode acessar.
+Na aplicação, um usuário deverá se cadastrar utilizando nome, e-mail e senha e se autenticar na aplicação utilizando JWT. 
 <hr>
 <img width = "400px" src="https://github.com/erascardsilva/Desafios_Nex_Digital/assets/70297459/1d759056-1d22-4e15-b57f-e804481e8edd">
 <hr>
